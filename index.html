@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An app to manage your products and to help you focus and manage your work"
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      sizes="64x64"
+      type="image/png"
+      href="./favicons/dark-favicon-icon.png"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fontello/css/fontello.css" />
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body class="">
+    <div class="container" id="container">
+      <div class="header">
+        <h1 class="main-title">product management system</h1>
+
+        <div class="day-mood" id="day-mood-toggler">
+          <i class="icon-sun-filled" id="light-mood"></i>
+          <i class="icon-moon-inv active" id="dark-mood"></i>
+        </div>
+      </div>
+
+      <section class="inputs">
+        <input type="text" id="title" placeholder="Title" />
+        <div class="price">
+          <input type="number" id="price" placeholder="Price" />
+          <input type="number" id="taxes" placeholder="Taxes" />
+          <input type="number" id="ads" placeholder="Ads" />
+          <input type="number" id="discount" placeholder="Discount" />
+          <small id="total" class="total"></small>
+        </div>
+        <input type="number" id="quantity" placeholder="Quantity" />
+        <input type="text" id="category" placeholder="Category" />
+        <button id="create-product">Create</button>
+      </section>
+
+      <section class="outputs">
+        <div class="search-block">
+          <input type="text" id="search" placeholder="Search" />
+          <div class="search-btns">
+            <button id="search-title">Search By Title</button>
+            <button id="search-category">Search By Category</button>
+          </div>
+        </div>
+
+        <div id="delete-all"></div>
+
+        <table id="table">
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th class="price-title">price</th>
+            <th class="taxes">taxes</th>
+            <th class="ads">ads</th>
+            <th class="discount">discount</th>
+            <th class="quantity">quantity</th>
+            <th class="total-ds">total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+    </div>
+    <div id="modal-container" class="modal-contianer"></div>
+  </body>
+</html>
