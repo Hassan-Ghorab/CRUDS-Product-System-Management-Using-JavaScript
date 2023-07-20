@@ -3,7 +3,7 @@ This project is CURDS App built with HTML, CSS, and Vanilla Javascript.
 
 # Live Demo
 You can view the live demo of the project at 
-# [CURDS APP LIVE](https://hassan-ghorab.github.io/Todo-List-App/)
+# [CURDS APP LIVE](https://hassan-ghorab.github.io/CRUDS-Product-System-Management-Using-JavaScript/)
 
 # Technologies Used
 - HTML
