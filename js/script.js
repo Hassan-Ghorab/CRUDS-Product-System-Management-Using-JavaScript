@@ -72,15 +72,15 @@ function showData() {
   for (let product of productsArray) {
     let productContent = ` 
     <tr>
-    <td>${index + 1}</td>
-    <td>${product.title}</td>
-    <td class="price-title">${product.price}</td>
-    <td class="taxes">${product.taxes}</td>
-    <td class="ads">${product.ads}</td>
-    <td class="discount">${product.discount}</td>
-    <td class="quantity">${product.quantity}</td>
-    <td class="total-ds">${product.total}</td>
-    <td>${product.category}</td>
+    <td> <span class="title-ds">Id:</span> ${index + 1}</td>
+    <td> <span class="title-ds">Title:</span> ${product.title}</td>
+    <td> <span class="title-ds">Price:</span> ${product.price}</td>
+    <td> <span class="title-ds">Taxes:</span> ${product.taxes}</td>
+    <td> <span class="title-ds">Ads:</span> ${product.ads}</td>
+    <td> <span class="title-ds">Discount:</span> ${product.discount}</td>
+    <td> <span class="title-ds">Quantity:</span> ${product.quantity}</td>
+    <td> <span class="title-ds">Total:</span> ${product.total}</td>
+    <td> <span class="title-ds">Category:</span> ${product.category}</td>
     <td><i class="icon-edit" id="update" onclick="updateProduct(${index})"></i></td>
     <td><i class="icon-trash" id="delete" onclick="deleteProduct(${index})"></i></td>
     </tr>
